@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextToAudioApp", "TextToAudioApp.csproj", "{52ABAC94-88BC-4DB2-994E-A17011EAEC72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52ABAC94-88BC-4DB2-994E-A17011EAEC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52ABAC94-88BC-4DB2-994E-A17011EAEC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52ABAC94-88BC-4DB2-994E-A17011EAEC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52ABAC94-88BC-4DB2-994E-A17011EAEC72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB34BD2E-0B7A-499F-B61B-22E6201AE994}
+	EndGlobalSection
+EndGlobal

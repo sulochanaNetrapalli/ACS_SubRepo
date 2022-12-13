@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ACS\\dotnet\\TextToAudioApp\\TextToAudioApp.csproj": {}
+    "C:\\ACS\\gitRepo\\TextToAudioApp\\TextToAudioApp.csproj": {}
   },
   "projects": {
-    "C:\\ACS\\dotnet\\TextToAudioApp\\TextToAudioApp.csproj": {
+    "C:\\ACS\\gitRepo\\TextToAudioApp\\TextToAudioApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ACS\\dotnet\\TextToAudioApp\\TextToAudioApp.csproj",
+        "projectUniqueName": "C:\\ACS\\gitRepo\\TextToAudioApp\\TextToAudioApp.csproj",
         "projectName": "TextToAudioApp",
-        "projectPath": "C:\\ACS\\dotnet\\TextToAudioApp\\TextToAudioApp.csproj",
+        "projectPath": "C:\\ACS\\gitRepo\\TextToAudioApp\\TextToAudioApp.csproj",
         "packagesPath": "C:\\Users\\v-nesulochan\\.nuget\\packages\\",
-        "outputPath": "C:\\ACS\\dotnet\\TextToAudioApp\\obj\\",
+        "outputPath": "C:\\ACS\\gitRepo\\TextToAudioApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
