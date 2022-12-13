@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M2E6pLaLxZ8TqccNIo9XxubORv5IRzBtAa2utU4rHfU6ts5S6lj9HCDmZQ/DzuTVCDJIwBYIEAN4Zof6034uoA==",
+  "dgSpecHash": "SPhEDdUi47gsvkpEZMCpgGrBDlpZbk8mr5y1dgsbqCXoj8aUIOgWUOTVrJCzL0MoHyXUav8M3B7sjd4HYxwQCg==",
   "success": true,
-  "projectFilePath": "C:\\ACS\\gitRepo\\TextToAudioApp\\TextToAudioApp.csproj",
+  "projectFilePath": "C:\\ACS\\dotnet\\TextToAudioApp\\TextToAudioApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\v-nesulochan\\.nuget\\packages\\azure.ai.formrecognizer\\4.0.0\\azure.ai.formrecognizer.4.0.0.nupkg.sha512",
     "C:\\Users\\v-nesulochan\\.nuget\\packages\\azure.communication.common\\1.2.0\\azure.communication.common.1.2.0.nupkg.sha512",

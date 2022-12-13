@@ -7678,11 +7678,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ACS\\gitRepo\\TextToAudioApp\\TextToAudioApp.csproj",
+      "projectUniqueName": "C:\\ACS\\dotnet\\TextToAudioApp\\TextToAudioApp.csproj",
       "projectName": "TextToAudioApp",
-      "projectPath": "C:\\ACS\\gitRepo\\TextToAudioApp\\TextToAudioApp.csproj",
+      "projectPath": "C:\\ACS\\dotnet\\TextToAudioApp\\TextToAudioApp.csproj",
       "packagesPath": "C:\\Users\\v-nesulochan\\.nuget\\packages\\",
-      "outputPath": "C:\\ACS\\gitRepo\\TextToAudioApp\\obj\\",
+      "outputPath": "C:\\ACS\\dotnet\\TextToAudioApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
