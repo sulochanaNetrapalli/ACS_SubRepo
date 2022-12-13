@@ -17,20 +17,17 @@ namespace TextToAudioApp
         public static string customMessage;
         static async Task Main(string[] args)
         {
-            //var ngrokUrl = "https://cca1-43-230-212-157.in.ngrok.io";
             Console.WriteLine("enter CognitiveServiceKey");
             key = Console.ReadLine();
             Console.WriteLine("enter CognitiveServiceRegion");
             region = Console.ReadLine();
             Console.WriteLine("enter customMessage");
             customMessage = Console.ReadLine();
-            //Program pr = new Program(key, region, customMessage);
             await GenerateCustomAudioMessage();
             Console.ReadLine();
         }
         private static async Task GenerateCustomAudioMessage()
         {
-
             try
             {
                 if (!string.IsNullOrEmpty(key) && !string.IsNullOrEmpty(region) && !string.IsNullOrEmpty(customMessage))
