@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TextToAudioApp"
   ],
-  "SelectedNode": "\\C:\\ACS\\gitRepo",
+  "SelectedNode": "\\TextToAudioApp\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

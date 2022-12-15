@@ -2,10 +2,12 @@
 using Azure.Communication.Identity;
 using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
+using Microsoft.Extensions.Azure;
 using Microsoft.Owin.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace TextToAudioApp
@@ -15,18 +17,28 @@ namespace TextToAudioApp
         public static string key;
         public static string region;
         public static string customMessage;
+        public static string fileName;
         static async Task Main(string[] args)
         {
-            Console.WriteLine("enter CognitiveServiceKey");
-            key = Console.ReadLine();
-            Console.WriteLine("enter CognitiveServiceRegion");
-            region = Console.ReadLine();
-            Console.WriteLine("enter customMessage");
-            customMessage = Console.ReadLine();
-            await GenerateCustomAudioMessage();
+            Console.WriteLine("enter CognitiveServiceKey ,region and fileName values");
+            var userInput = Console.ReadLine().Split();
+            key = userInput[0];
+            region = userInput[1];
+            fileName = userInput[2];
+            Console.WriteLine("enter customMessage and press esc to stop");
+            bool done = false;
+            while (!done)
+            {
+                if (Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape)
+                {
+                    done = true;
+                }
+                customMessage = Console.ReadLine();
+                await GenerateCustomAudioMessage(fileName);
+            }
             Console.ReadLine();
         }
-        private static async Task GenerateCustomAudioMessage()
+        private static async Task GenerateCustomAudioMessage(string fileName)
         {
             try
             {
@@ -34,13 +46,19 @@ namespace TextToAudioApp
                 {
                     var config = SpeechConfig.FromSubscription(key, region);
                     config.SetSpeechSynthesisOutputFormat(SpeechSynthesisOutputFormat.Riff16Khz16BitMonoPcm);
-
-                    var audioConfig = AudioConfig.FromWavFileOutput($"../../../custom-message.wav");
-                    var synthesizer = new SpeechSynthesizer(config, audioConfig);
-
-                    Console.WriteLine("Converting customMessage to audio...");
-                    await synthesizer.SpeakTextAsync(customMessage);
-                    Console.WriteLine("Converter customMessage into audio successfully!");
+                    var synthesizer = new SpeechSynthesizer(config, null);
+                    var result = await synthesizer.SpeakTextAsync(customMessage);
+                    var stream = AudioDataStream.FromResult(result);
+                    if (fileName != null && File.Exists($"../../../${fileName}.wav"))
+                    {
+                       
+                        //stream.AppendToWaveFileAsync($"../../../${fileName}.wav");
+                    }
+                    else
+                    {
+                        await stream.SaveToWaveFileAsync($"../../../${fileName}.wav");
+                    }
+                    Console.WriteLine("Converted customMessage into audio successfully!. Give input to continue or press escape to stop ");
                 }
                 else
                 {
