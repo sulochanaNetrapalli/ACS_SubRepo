@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.4.33205.214
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactWithDotNet", "ReactWithDotNet\ReactWithDotNet.csproj", "{299BB7B1-7DC5-4A49-A861-CFA522ED07C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project1", "Project1\Project1.csproj", "{B9C21669-1D43-444F-BD93-CC6DAD909ACF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{299BB7B1-7DC5-4A49-A861-CFA522ED07C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{299BB7B1-7DC5-4A49-A861-CFA522ED07C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{299BB7B1-7DC5-4A49-A861-CFA522ED07C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{299BB7B1-7DC5-4A49-A861-CFA522ED07C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9C21669-1D43-444F-BD93-CC6DAD909ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9C21669-1D43-444F-BD93-CC6DAD909ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9C21669-1D43-444F-BD93-CC6DAD909ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9C21669-1D43-444F-BD93-CC6DAD909ACF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1DFF0810-1DDB-455F-A022-35DF8E031ABB}
+		SolutionGuid = {5457F798-A08C-44BB-ABD2-5E8D0C33A930}
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,4 @@
-namespace ReactWithDotNet
+namespace Project1
 {
     public class WeatherForecast
     {
